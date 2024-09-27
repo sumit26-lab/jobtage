@@ -73,10 +73,11 @@ function App() {
               {/* jobs/10/apply/43 */}
             </Route>
             <Route path='/apply/:id' element={<JobApplyPage />} loader={fetchJobPosts} />
-            <Route path='/ForgetPassword' element={<ForgetPassword />} />
-            <Route path='/PasswordReset/:resetToken' element={<PasswordReset />} />
+            
 
           </Route>
+          <Route path='/ForgetPassword' element={<ForgetPassword />} />
+            <Route path='/PasswordReset/:resetToken' element={<PasswordReset />} />
           <Route index element={<Home />} />
           <Route path='jobs/:id' element={<Jobpage />} />
 
