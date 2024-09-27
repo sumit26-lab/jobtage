@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 const baseURL = process.env.VITE_API_BASE_URL|| 'https://jobtage.vercel.app';
-
+console.log(baseURL)
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
